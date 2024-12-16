@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Media Pembelajaran dan Konsep Pembelajaran Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #2e7d32;
+            padding: 15px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #388e3c;
+            transform: scale(1.1);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 2.5em;
+            color: #fff; /* Change this to white or any visible color */
+            cursor: pointer;
+            z-index: 10;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Content Area */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .container h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #388e3c;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            font-size: 1.8em;
+            color: #388e3c;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                display: none;
+                width: 100%;
+                text-align: center;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            nav ul.show {
+                display: block;
+                background-color: #388e3c;
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            .container h2 {
+                font-size: 2.2em;
+            }
+
+            .card h3 {
+                font-size: 1.5em;
+            }
+
+            .card p {
+                font-size: 1em;
+            }
+        }
+
+        /* Mobile View for smaller devices */
+        @media (max-width: 480px) {
+            nav ul li a {
+                font-size: 1.1em;
+            }
+
+            footer p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#materi">Materi</a></li>
+            <li><a href="index.html#about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Dasar-Dasar Desain Pembelajaran</h2>
+        <div class="card">
+            <p><b>Dasar-Dasar Desain Pembelajaran</b> adalah proses perencanaan yang sistematis dan terstruktur untuk menciptakan pengalaman belajar yang efektif dan efisien. Tujuan utama dari desain pembelajaran adalah memastikan bahwa proses belajar mengajar dapat mencapai hasil yang optimal sesuai dengan kebutuhan siswa. Desain pembelajaran mencakup beberapa komponen penting, yaitu tujuan pembelajaran, strategi pembelajaran, materi, media, dan evaluasi.</p>
+            <ol><li>Tujuan Pembelajaran</li>
+            <p>Tujuan pembelajaran adalah langkah pertama yang harus ditetapkan dalam desain pembelajaran. Tujuan ini berfungsi sebagai panduan untuk menentukan apa yang ingin dicapai oleh siswa setelah mengikuti pembelajaran. Tujuan yang baik harus spesifik, terukur, dapat dicapai, relevan, dan terikat waktu (SMART). Dengan tujuan yang jelas, pengajar dapat merancang seluruh proses pembelajaran dengan fokus dan terarah.</p>
+            <li>Strategi Pembelajaran</li>
+            <p>Strategi pembelajaran merujuk pada pendekatan atau metode yang digunakan untuk menyampaikan materi kepada siswa. Strategi ini disesuaikan dengan karakteristik siswa, tujuan pembelajaran, serta konteks pembelajaran. Beberapa strategi pembelajaran yang umum digunakan antara lain pembelajaran aktif, pembelajaran kolaboratif, pembelajaran berbasis proyek, atau pembelajaran berbasis masalah. Strategi yang tepat dapat meningkatkan keterlibatan siswa dan memfasilitasi pemahaman yang lebih mendalam.</p>
+            <li>Materi Pembelajaran</li>
+            <p>Materi pembelajaran adalah konten yang akan dipelajari oleh siswa. Materi ini harus relevan dengan tujuan pembelajaran dan disesuaikan dengan tingkat kemampuan serta kebutuhan siswa. Materi bisa berupa teks, gambar, video, atau sumber lain yang mendukung pembelajaran. Pembelajaran yang efektif memerlukan penyusunan materi yang jelas, terstruktur, dan mudah dipahami oleh siswa.</p>
+            <li>Media Pembelajaran</li>
+            <p>Media pembelajaran adalah alat atau sarana yang digunakan untuk menyampaikan materi kepada siswa. Media ini dapat berupa media visual (gambar, grafik, diagram), audio (rekaman suara, podcast), atau audiovisual (video, animasi). Pemilihan media yang tepat sangat penting untuk mendukung pemahaman siswa, memperkaya pengalaman belajar, dan membuat proses belajar lebih menarik serta interaktif.</p>
+            <li>Evaluasi Pembelajaran</li>
+            <p>Evaluasi pembelajaran adalah proses yang digunakan untuk mengukur sejauh mana tujuan pembelajaran tercapai. Evaluasi dapat dilakukan melalui berbagai bentuk, seperti tes, kuis, tugas proyek, atau observasi. Evaluasi ini tidak hanya berfungsi untuk menilai kinerja siswa, tetapi juga memberikan umpan balik kepada pengajar tentang efektivitas metode dan strategi pembelajaran yang digunakan. Dengan evaluasi yang tepat, pengajar dapat memperbaiki dan mengadaptasi proses pembelajaran di masa depan.</p></ol>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Desain Pembelajaran PAI | Semua hak cipta dilindungi.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>

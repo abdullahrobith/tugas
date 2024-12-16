@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Media Pembelajaran dan Konsep Pembelajaran Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #2e7d32;
+            padding: 15px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #388e3c;
+            transform: scale(1.1);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 2.5em;
+            color: #fff; /* Change this to white or any visible color */
+            cursor: pointer;
+            z-index: 10;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Content Area */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .container h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #388e3c;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            font-size: 1.8em;
+            color: #388e3c;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                display: none;
+                width: 100%;
+                text-align: center;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            nav ul.show {
+                display: block;
+                background-color: #388e3c;
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            .container h2 {
+                font-size: 2.2em;
+            }
+
+            .card h3 {
+                font-size: 1.5em;
+            }
+
+            .card p {
+                font-size: 1em;
+            }
+        }
+
+        /* Mobile View for smaller devices */
+        @media (max-width: 480px) {
+            nav ul li a {
+                font-size: 1.1em;
+            }
+
+            footer p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#materi">Materi</a></li>
+            <li><a href="index.html#about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Materi pembelajaran berbasis web</h2>
+        <div class="card">
+            <p><b>Materi pembelajaran berbasis web </b>adalah pendekatan di mana materi pembelajaran disajikan dalam format yang dapat diakses melalui platform web, memungkinkan siswa untuk belajar kapan saja dan di mana saja. Materi ini dapat berupa berbagai jenis konten, seperti artikel yang menyediakan informasi teoretis, modul interaktif yang memungkinkan siswa untuk berinteraksi langsung dengan materi melalui latihan atau simulasi, serta forum diskusi yang memberikan ruang bagi siswa untuk berkolaborasi, berbagi ide, dan berdiskusi dengan pengajar atau sesama siswa. Dengan format berbasis web, materi pembelajaran menjadi lebih fleksibel, memungkinkan siswa untuk mengakses sumber daya pendidikan tanpa terbatas oleh waktu atau lokasi, serta meningkatkan keterlibatan dan pemahaman siswa melalui fitur-fitur interaktif yang dapat disesuaikan dengan kebutuhan belajar mereka.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Desain Pembelajaran PAI | Semua hak cipta dilindungi.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
